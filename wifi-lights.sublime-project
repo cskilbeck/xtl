@@ -17,13 +17,16 @@
 			"path": "stm103"
 		},
 		{
-			"path": "C:\\ubuntu\\home\\chs\\esp\\esp-idf\\components"
-		},
-		{
 			"path": "cloud"
 		},
 		{
 			"path": "esp8266\\controller_esp8266"
+		},
+		{
+			"path": "C:\\ubuntu\\home\\chs\\esp\\ESP8266_RTOS_SDK"
+		},
+		{
+			"path": "C:\\ubuntu\\home\\chs\\esp\\esp-idf"
 		}
 	]
 }
