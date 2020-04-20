@@ -1,5 +1,5 @@
-# Hello World Example
+# ESP8266 Wifi Christmas Tree Lights firmware
 
-Starts a FreeRTOS task to print "Hello World"
-
-See the README.md file in the upper level 'examples' directory for more information about examples.
+I2S for Neopixel driver
+Simple websocket client for listening to Alexa/STUN server
+Not much else going on in here, all the effects/settings are the same
