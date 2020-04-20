@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "esp32"
+		},
+		{
+			"path": "lambda"
+		},
+		{
+			"path": "cloud\\bigserv"
+		},
+		{
+			"path": "esp8266\\lights"
+		},
+		{
+			"path": "stm103"
+		},
+		{
+			"path": "C:\\ubuntu\\home\\chs\\esp\\esp-idf\\components"
+		},
+		{
+			"path": "cloud"
+		},
+		{
+			"path": "esp8266\\controller_esp8266"
+		}
+	]
+}

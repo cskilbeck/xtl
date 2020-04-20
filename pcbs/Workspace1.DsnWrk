@@ -1,0 +1,12 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=buck\Buck.PrjPcb
+[Project2]
+ProjectPath=buck3\buck3.PrjPcb
+[Project3]
+ProjectPath=..\..\TideTracker\PCB\PCB_Project.PrjPcb
+[Project4]
+ProjectPath=pixel\pixel.PrjPcb
+[Project5]
+ProjectPath=buck2\Controller.PrjPcb

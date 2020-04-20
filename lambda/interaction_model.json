@@ -1,0 +1,835 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "christmas tree lights",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "solid_intent",
+                    "slots": [
+                        {
+                            "name": "color_one",
+                            "type": "chs_color"
+                        },
+                        {
+                            "name": "action",
+                            "type": "chs_action"
+                        },
+                        {
+                            "name": "color_two",
+                            "type": "chs_color"
+                        },
+                        {
+                            "name": "color_three",
+                            "type": "chs_color"
+                        }
+                    ],
+                    "samples": [
+                        "{action} {color_one} {color_two} and {color_three}",
+                        "to {action} {color_one} {color_two} and color {color_three}",
+                        "to go {action} {color_one}  {color_two} and {color_three}",
+                        "to go {action} {color_one}",
+                        "to go {action} {color_one} and {color_two}",
+                        "to {action} {color_one}",
+                        "to {action} {color_one} and {color_two}",
+                        "{action} {color_one}",
+                        "{action} {color_one} and {color_two}"
+                    ]
+                },
+                {
+                    "name": "action_intent",
+                    "slots": [
+                        {
+                            "name": "action",
+                            "type": "chs_action"
+                        }
+                    ],
+                    "samples": [
+                        "to {action} "
+                    ]
+                },
+                {
+                    "name": "speed_intent",
+                    "slots": [
+                        {
+                            "name": "speed_action",
+                            "type": "speed_action"
+                        },
+                        {
+                            "name": "speed_change",
+                            "type": "speed_change"
+                        }
+                    ],
+                    "samples": [
+                        "to go {speed_action}",
+                        "to {speed_change}",
+                        "{speed_action}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "chs_color",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "random"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alice blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "antique white"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blanched almond"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue violet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cadet blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chartreuse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chocolate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coral"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cornflower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cornsilk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crimson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark cyan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark goldenrod"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark khaki"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark magenta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark olive green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark orange"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark orchid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark salmon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark sea green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark slate blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark turquoise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dark violet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deep pink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deep sky blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dodger blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "firebrick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "floral white"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "forest green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fuschia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gainsboro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ghost white"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "goldenrod"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "web green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green yellow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "honeydew"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hot pink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indigo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ivory"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "khaki"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lavender"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lavender blush"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lawn green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lemon chiffon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light coral"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light cyan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light goldenrod"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light pink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light salmon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light sea green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light sky blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light steel blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light yellow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lime green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "linen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "magenta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maroon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "web maroon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium orchid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium purple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium sea green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium spring green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium turquoise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medium violet red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "midnight blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mint cream"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "misty rose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moccasin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "navy blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "old lace"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "olive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "olive drab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orange"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orange red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orchid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pale goldenrod"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pale green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pale turquoise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pale violet red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "papaya whip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peach puff"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peru"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pink"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "powder blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "purple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "web purple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rebecca purple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rosy brown"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "royal blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salmon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sea green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seashell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sienna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sky blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slate blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spring green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "steel blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "teal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thistle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tomato"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turquoise"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "violet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wheat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "white"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "white smoke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yellow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yellow green"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "chs_action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "glow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "twinkle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "solid",
+                                "synonyms": [
+                                    "go solid"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "go"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pulse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alternate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sparkle",
+                                "synonyms": [
+                                    "sparkling"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "speed_action",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "normal speed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fastest",
+                                "synonyms": [
+                                    "very fast"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slowest",
+                                "synonyms": [
+                                    "very slow"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slow"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "slower"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "faster"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "speed_change",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "slow down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "speed up"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

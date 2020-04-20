@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\chs\\AppData\\Local\\Packages\\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\chs\\esp\\esp-idf\\components"
+		},
+		{
+			"path": "C:\\Dev\\wifi-lights\\lambda"
+		},
+		{
+			"path": "C:\\Dev\\wifi-lights\\cloud\\bigserv"
+		},
+		{
+			"path": "C:\\Dev\\wifi-lights\\esp8266\\lights"
+		},
+		{
+			"path": "C:\\Dev\\wifi-lights\\stm103"
+		},
+		{
+			"path": "C:\\Dev\\wifi-lights\\cloud"
+		}
+	]
+}

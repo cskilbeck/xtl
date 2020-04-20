@@ -1,0 +1,13 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 17:43:20 On 01/12/2019
+
+Output: Report Board Stack
+Type  : Report Board Stack
+From  : PCB Document [buck3.PcbDoc]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 17:43:22 On 01/12/2019

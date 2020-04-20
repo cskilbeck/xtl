@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 12:34:44 PM On 22-Jun-19
+
+Output: BOM
+Type  : BOM
+From  : Variant [[No Variations]] of BOM Document [buck3.BomDoc]
+   Generated File[BOM-buck3.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 12:34:47 PM On 22-Jun-19

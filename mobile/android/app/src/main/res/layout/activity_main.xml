@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="100"
+        tools:layout_constraintHeight_percent="100">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/noConnectionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:fadingEdge="none"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="No connection to controller"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/instructions_textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="12dip"
+                android:text="In WiFi settings, look for a WiFi Access Point called 'Xmas Lights Controller' and connect to it, then follow the instructions "
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="15sp"
+                android:typeface="normal"
+                app:layout_constraintBottom_toTopOf="@+id/wifi_settings_button"
+                app:layout_constraintTop_toBottomOf="@+id/noConnectionText"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/wifi_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here for WiFi settings"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/gotoButton"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <Button
+                android:id="@+id/gotoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Effects"
+                app:layout_constraintBottom_toTopOf="@+id/saveButton" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                app:layout_constraintBottom_toTopOf="@+id/progressBar" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/progressBar" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.75"
+                android:scaleY="0.75"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

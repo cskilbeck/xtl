@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLauncherShape">
+        <ignore path="src/main/res/drawable-hdpi/app_icon.png" />
+        <ignore path="src/main/res/drawable-mdpi/app_icon.png" />
+        <ignore path="src/main/res/drawable-xhdpi/app_icon.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/app_icon.png" />
+    </issue>
+</lint>

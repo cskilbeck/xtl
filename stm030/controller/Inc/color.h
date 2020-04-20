@@ -1,0 +1,29 @@
+//////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+//////////////////////////////////////////////////////////////////////
+
+#pragma pack(push, 1)
+
+struct color
+{
+    byte r, g, b;
+};
+
+#pragma pack(pop)
+
+typedef struct color color;
+
+//////////////////////////////////////////////////////////////////////
+
+extern int brightness;    // set this to 0..256 (off..brightest)
+extern int power;         // set this to 0 (off) or 1 (on)
+
+//////////////////////////////////////////////////////////////////////
+
+void change_brightness(int delta);
+void color_update();
+color color_from_rgb(int r, int g, int b);
+color gamma_correct(color c);
+color color_lerp(color x, color y, int l);
