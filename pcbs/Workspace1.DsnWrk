@@ -10,3 +10,5 @@ ProjectPath=..\..\TideTracker\PCB\PCB_Project.PrjPcb
 ProjectPath=pixel\pixel.PrjPcb
 [Project5]
 ProjectPath=buck2\Controller.PrjPcb
+[Project6]
+ProjectPath=controller_8266\controller_8266.PrjPcb
