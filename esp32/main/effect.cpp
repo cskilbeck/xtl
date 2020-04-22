@@ -690,6 +690,8 @@ void effect::frame_update(byte *frame_buffer)
     settings_t settings;
     if(xQueueReceive(settings_queue, &settings, 0)) {
 
+        ESP_LOGI(TAG, "New settings arrived");
+
         // init the vtable
         descriptors[settings.effect]();
         global_effect = (effect *)effect_object_buffer;
