@@ -259,20 +259,44 @@ void neopixel_init(int num_leds)
     // not sure what this is
     I2S0.conf.tx_msb_shift = 0;
 
+    //
     // tweak clkm_div_num, bck_div_num for specific timing
-
+    //
     // this works for PL9823, datasheet says:
-
+    //
     // zero:  350 (+/- 150)nS =  200nS to  500nS followed by 1360 (+/- 150)ns = 1210nS to 1510nS
     //  one: 1360 (+/- 150)ns = 1210nS to 1510nS followed by  350 (+/- 150)nS =  200nS to  500nS
-
+    //
     // So:
     //     160MHz / (13 * 5 = 65) = ~2.461538462MHz = 406.25nS per bit, 1625nS per nibble
-    //     zero (1000):  406.25nS ON, 1218.75nS OFF
-    //     one  (1110): 1218.75nS ON,  406.25nS OFF
-
+    //
+    // Zero:
+    //               ┌──────┐
+    //               │  T1  │        T2
+    //              ─┘      └─────────────────────               406.25nS ON, 1218.75nS OFF
+    //               │   1  │   0  │   0  │   0  │
+    //
+    // One:
+    //
+    //               ┌────────────────────┐
+    //               │        T1          │  T2
+    //              ─┘                    └───────
+    //               │   1  │   1  │   1  │   0  │              1218.75nS ON,  406.25nS OFF
+    //
     // I suspect it's more forgiving than this but I don't have a lot of samples
     // from different batches to find the limit so sticking to datasheet
+    //
+    // For 400 leds, one frame = 1625nS (T1+T2) * 24 (BPP) * 400 (num_leds) = 15.6mS total + 50uS (reset time) = 15.65mS
+    // so we can run at 60Hz (16.66mS)
+    // HOWEVER
+    // there is a small delay at the start due to the FIFO (looks like about 12uS)
+    // and some jitter due to IRQs (WiFi I think) so it's a bit tighter than it
+    // seems but gets away with it as far as I can tell
+    //
+    // NOTE I haven't found a way to use an inverting level shifter (cheaper) because idle state of I2S output = low
+    // so just using a non-inverting one (onsemi M74VHC1GT125DF1G) https://www.onsemi.com/pub/Collateral/MC74VHC1GT125-D.PDF
+    // which is nice because it has very forgiving logic level inputs but sadly max vcc of 5.5v so 5v ldo required
+    // because of 5.9v vcc
 
     I2S0.conf.bck_div_num = 13;
     I2S0.conf.clkm_div_num = 5;

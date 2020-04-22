@@ -20,7 +20,7 @@
 
 //////////////////////////////////////////////////////////////////////
 
-static char const *TAG = "EFFECT";
+static char const *TAG = "effect";
 
 static int global_speed = 128;
 static int frames = 0;
@@ -661,6 +661,7 @@ byte effect_object_buffer[sizeof(largest_t)];
 #define EFFECTOR(x)                                     \
     void x##_effect_create()                            \
     {                                                   \
+        ESP_LOGI(TAG, "Create " #x " effect");          \
         new((void *)effect_object_buffer) x##_effect(); \
     }
 
