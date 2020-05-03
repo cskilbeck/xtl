@@ -191,23 +191,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UNDPYMAF
 
-[Document10]
-DocumentPath=controller_8266.Annotation
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [Configuration1]
 Name=Default Configuration
 ParameterCount=0
@@ -1136,10 +1119,11 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=VCC5|NetColor=$00EFC3FF
-Net2=NetName=VCC24|NetColor=$00FFFF6E
-Net3=NetName=VCC5V9|NetColor=$00FF6E6E
-Net4=NetName=GND|NetColor=$006EFF6E
-Net5=NetName=VCC3V3|NetColor=clYellow
+Net2=NetName=AGND|NetColor=$00E9BD9F
+Net3=NetName=VCC24|NetColor=$00FFFF6E
+Net4=NetName=VCC5V9|NetColor=$00FF6E6E
+Net5=NetName=GND|NetColor=$006EFF6E
+Net6=NetName=VCC3V3|NetColor=clYellow
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0

@@ -59,7 +59,7 @@ __Previews/
 *.sublime-workspace
 stm030/controller/MDK-ARM/test/
 stm030/controller/MDK-ARM/RTE/
-
+pcbs/**/Project Outputs*/
 
 
 
