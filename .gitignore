@@ -60,7 +60,7 @@ __Previews/
 stm030/controller/MDK-ARM/test/
 stm030/controller/MDK-ARM/RTE/
 pcbs/**/Project Outputs*/
-
+pcbs/controller_8266/Outputs/Status Report.txt
 
 
 ## Ignore Visual Studio temporary files, build results, and
