@@ -43,6 +43,28 @@ void IRAM_ATTR hw_timer_callback(void *arg)
 
 //////////////////////////////////////////////////////////////////////
 
+void powerswitch_init()
+{
+    gpio_config_t c;
+    c.pin_bit_mask = GPIO_Pin_5 | GPIO_Pin_4;
+    c.mode = GPIO_MODE_OUTPUT;
+    c.pull_up_en = GPIO_PULLUP_DISABLE;
+    c.pull_down_en = GPIO_PULLDOWN_DISABLE;
+    c.intr_type = GPIO_INTR_DISABLE;
+    gpio_config(&c);
+}
+
+//////////////////////////////////////////////////////////////////////
+
+void powerswitch_set(bool on_or_off)
+{
+    // the pin is SHDN, setting it to 1 shuts down the LDO
+    gpio_set_level(GPIO_NUM_5, on_or_off ? 0 : 1);
+    gpio_set_level(GPIO_NUM_4, on_or_off ? 0 : 1);
+}
+
+//////////////////////////////////////////////////////////////////////
+
 void frame_update()
 {
     byte *frame_buffer = neopixel_get_frame_buffer();
@@ -72,7 +94,7 @@ void vblank_task(void *)
 
     neopixel_init(num_leds);
 
-    debug_set_color(debug_color::blue);
+    debug_set_color(debug_color::green);
     button_init();
 
     while(1) {
@@ -82,6 +104,7 @@ void vblank_task(void *)
         if(button_pressed) {
             debug_flash(debug_color::red, debug_color::off, 5, 5);
         }
+        powerswitch_set((frames >> 5) & 1);
         debug_update();
         frame_update();
         frames += 1;
@@ -100,6 +123,7 @@ extern "C" void app_main()
     ESP_ERROR_CHECK(ret);
 
     settings_queue = xQueueCreate(2, sizeof(settings_t));
+    powerswitch_init();
 
     debug_init();
     initialise_wifi();

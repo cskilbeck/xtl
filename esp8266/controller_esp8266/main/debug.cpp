@@ -19,7 +19,7 @@ namespace
 void debug_init()
 {
     gpio_config_t c;
-    c.pin_bit_mask = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_14;
+    c.pin_bit_mask = GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14;
     c.mode = GPIO_MODE_OUTPUT;
     c.pull_up_en = GPIO_PULLUP_DISABLE;
     c.pull_down_en = GPIO_PULLDOWN_DISABLE;
@@ -55,7 +55,7 @@ void debug_update()
         c = flash_color[(flash_frames / flash_period) & 1];
     }
     int x = static_cast<int>(c);
-    gpio_set_level(GPIO_NUM_14, x & 1);
-    gpio_set_level(GPIO_NUM_4, x & 2);
-    gpio_set_level(GPIO_NUM_5, x & 4);
+    gpio_set_level(GPIO_NUM_12, x & 1);
+    gpio_set_level(GPIO_NUM_13, x & 2);
+    gpio_set_level(GPIO_NUM_14, x & 4);
 }
