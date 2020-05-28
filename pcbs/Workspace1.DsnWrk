@@ -12,3 +12,5 @@ ProjectPath=pixel\pixel.PrjPcb
 ProjectPath=buck2\Controller.PrjPcb
 [Project6]
 ProjectPath=controller_8266\controller_8266.PrjPcb
+[Project7]
+ProjectPath=..\..\clock\clock.PrjPcb

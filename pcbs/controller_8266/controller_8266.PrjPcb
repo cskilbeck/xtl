@@ -191,14 +191,10 @@ GenerateClassCluster=0
 DocumentUniqueId=UNDPYMAF
 
 [GeneratedDocument1]
-DocumentPath=.\Outputs\2020-05-22\controller_8266.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Outputs\2020-05-22\controller_8266.html
 DItemRevisionGUID=
 
-[GeneratedDocument3]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for controller_8266\controller_8266.step
 DItemRevisionGUID=
 
@@ -360,7 +356,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=Samsung CLP-320 Series (USB001)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -918,7 +914,7 @@ Type30=1
 Type31=1
 Type32=1
 Type33=1
-Type34=1
+Type34=0
 Type35=1
 Type36=1
 Type37=1
