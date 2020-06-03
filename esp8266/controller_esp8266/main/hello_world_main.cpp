@@ -58,9 +58,9 @@ void powerswitch_init()
 
 void powerswitch_set(bool on_or_off)
 {
-    // the pin is SHDN, setting it to 1 shuts down the LDO
-    gpio_set_level(GPIO_NUM_5, on_or_off ? 0 : 1);
-    gpio_set_level(GPIO_NUM_4, on_or_off ? 0 : 1);
+    int x = int(on_or_off);
+    gpio_set_level(GPIO_NUM_5, 1 - x);
+    gpio_set_level(GPIO_NUM_4, x);
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -104,7 +104,6 @@ void vblank_task(void *)
         if(button_pressed) {
             debug_flash(debug_color::red, debug_color::off, 5, 5);
         }
-        powerswitch_set((frames >> 5) & 1);
         debug_update();
         frame_update();
         frames += 1;
@@ -123,7 +122,9 @@ extern "C" void app_main()
     ESP_ERROR_CHECK(ret);
 
     settings_queue = xQueueCreate(2, sizeof(settings_t));
+    settings_t::init();
     powerswitch_init();
+    powerswitch_set(true);
 
     debug_init();
     initialise_wifi();

@@ -14,3 +14,5 @@ ProjectPath=buck2\Controller.PrjPcb
 ProjectPath=controller_8266\controller_8266.PrjPcb
 [Project7]
 ProjectPath=..\..\clock\clock.PrjPcb
+[Project8]
+ProjectPath=buck4\buck4.PrjPcb

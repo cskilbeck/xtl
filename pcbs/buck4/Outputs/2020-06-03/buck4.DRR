@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: buck4.PcbDoc   03/06/2020  11:34:59
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : buck4-RoundHoles.TXT
+ASCII SlotHoles File : buck4-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.4mm (16mil)                                             Round             82        PTH        0.00mm (0.00inch)
+T2      1mm (39mil)                                               Round             8         PTH        0.00mm (0.00inch)
+T3      2mm (79mil)                                               Round             4         PTH        0.00mm (0.00inch)
+T4      2mm (79mil)                                               Slot              4         PTH        0.00mm (0.00inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              98
+
+Total Processing Time (hh:mm:ss) : 00:00:00
