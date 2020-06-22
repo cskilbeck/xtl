@@ -1,0 +1,7 @@
+DRC Rules Export File for PCB: C:\Dev\wifi-christmas-tree-lights\pcbs\buck4\buck4.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion_STITCH|Scope=Board|Minimum=4.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit_SGND|Scope=Board|Allowed=1
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=1.97
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
