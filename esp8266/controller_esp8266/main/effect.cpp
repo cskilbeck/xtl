@@ -17,6 +17,7 @@
 #include "settings.h"
 #include "effect.h"
 #include "debug.h"
+#include "power.h"
 
 //////////////////////////////////////////////////////////////////////
 
@@ -742,9 +743,10 @@ void effect::frame_update(byte *frame_buffer)
         color black = 0;
         color white(255, 220, 235);
         global_dimmer = lerp(black, white, settings.brightness * 255 / 100);
-        if((settings.flags & (uint32)settings_t::flags_t::powerstate) == 0) {
-            global_dimmer = black;    // the powerstate is a lie, just sets brightness to 0
-        }
+        bool powerstate = (settings.flags & (uint32)settings_t::flags_t::powerstate) != 0;
+        powerswitch_set(powerstate);
+
+        ESP_LOGI(TAG, "Setting powerstate to %d", powerstate);
 
         // finally, let the effect init() itself
         global_effect->init();

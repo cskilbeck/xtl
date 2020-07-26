@@ -96,6 +96,8 @@ namespace
     {
         static char const *TAG = "websocket";
 
+        debug_set_color(debug_color::green);
+
         settings_t::init();
 
         client.on_message = [](byte const *msg, int n) {
