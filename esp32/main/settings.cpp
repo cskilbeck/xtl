@@ -391,6 +391,8 @@ void settings_t::init()
         switch(err) {
         case ESP_OK:
             settings.flags |= (uint32)settings_t::flags_t::loaded;
+
+            // hmm, should we force powerstate to on when first powered up?
             settings.flags |= (uint32)settings_t::flags_t::powerstate;
             settings.print("LOADED");
             global_settings = settings;

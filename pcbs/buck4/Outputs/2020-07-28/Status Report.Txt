@@ -1,0 +1,10 @@
+Output: Export STEP
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [buck4.PcbDoc]
+   Generated File[buck4.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 23:03:04 On 28/07/2020

@@ -1,0 +1,37 @@
+Altium Designer Pick and Place Locations
+C:\Dev\wifi-christmas-tree-lights\pcbs\buck4\Outputs\2020-07-28\Pick Place for buck4.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       28/07/20
+Time:       23:02
+Revision:   e8434078c3028953f2ebb3494965421008303875
+Variant:    No variations
+Units used: mm
+
+"Designator","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation"
+"DP2","TopLayer","DATA_PAD","15.8802","1.6731","0"
+"DP1","TopLayer","DATA_PAD","18.2005","1.6731","0"
+"C2","TopLayer","CAPC1608X08L","15.1755","7.2986","90"
+"IC3","TopLayer","SOT95P260X90-5L","17.4258","6.7986","270"
+"C1","TopLayer","CAPC1608X08L","18.3758","3.8983","90"
+"IC2","TopLayer","SOT65P210X100-5L","16.1750","3.8483","360"
+"Rt2","TopLayer","RESC1608X03L","28.6750","5.7722","180"
+"Ron","TopLayer","RESC1608X03L","28.2515","1.2999","180"
+"IC1","TopLayer","MXA14A","24.4013","6.1354","90"
+"Rilim","TopLayer","RESC1608X03L","28.2241","11.1205","90"
+"Rt1","TopLayer","RESC1608X03L","28.6750","7.0530","180"
+"Rb1","TopLayer","RESC1608X03L","28.6750","8.3111","360"
+"L1","TopLayer","WE-HCI_1335","11.7003","15.0000","90"
+"Cvcc","TopLayer","CAPC1608X08L","20.9271","3.9906","90"
+"Css","TopLayer","CAPC1608X08L","25.7513","1.2999","360"
+"Cout2","TopLayer","CAPMP7343X11L","12.1753","4.4749","90"
+"Cout1","TopLayer","CAPMP7343X11L","7.3750","4.4749","90"
+"Cin1","TopLayer","CAPC3225X25L","25.6564","19.7003","270"
+"Cff","TopLayer","CAPC1608X08L","28.6750","4.4934","180"
+"Cbyp","TopLayer","CAPC2012X12L","22.1299","1.2349","360"
+"Cbst","TopLayer","CAPC1608X08L","26.8739","11.1205","90"
+"M1","TopLayer","TRANS_NEXFET_Q5A","27.1538","15.1750","360"
+"M2","TopLayer","TRANS_NEXFET_Q5A","21.3013","15.7775","90"
+"Cin2","TopLayer","CAPC3225X25L","28.5567","19.7003","270"

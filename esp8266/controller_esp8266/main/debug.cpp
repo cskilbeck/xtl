@@ -7,6 +7,7 @@
 
 namespace
 {
+    debug_led_state state;
     debug_color solid_color = debug_color::off;
     debug_color flash_color[2];
     int flash_frames = 0;
@@ -37,6 +38,13 @@ void debug_set_color(debug_color c)
 
 //////////////////////////////////////////////////////////////////////
 
+void debug_switch(debug_led_state new_state)
+{
+    state = new_state;
+}
+
+//////////////////////////////////////////////////////////////////////
+
 void debug_flash(debug_color a, debug_color b, int period_frames, int num_flashes)
 {
     flash_color[0] = a;
@@ -49,7 +57,7 @@ void debug_flash(debug_color a, debug_color b, int period_frames, int num_flashe
 
 void debug_update()
 {
-    debug_color c = solid_color;
+    debug_color c = (state == debug_led_state::on) ? solid_color : debug_color::off;
     if(flash_frames != 0) {
         flash_frames -= 1;
         c = flash_color[(flash_frames / flash_period) & 1];

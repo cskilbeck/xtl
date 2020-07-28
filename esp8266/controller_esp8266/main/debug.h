@@ -28,6 +28,14 @@ inline void debug_toggle(gpio_num_t n)
 
 //////////////////////////////////////////////////////////////////////
 
+enum class debug_led_state
+{
+    off = 0,
+    on = 1
+};
+
+//////////////////////////////////////////////////////////////////////
+
 enum class debug_color
 {
     off = ~0,
@@ -44,6 +52,11 @@ enum class debug_color
 // set debug led color permanently
 
 void debug_set_color(debug_color c);
+
+//////////////////////////////////////////////////////////////////////
+// switch debug led on or off
+
+void debug_switch(debug_led_state new_state);
 
 //////////////////////////////////////////////////////////////////////
 // flash debug led between two colors at some speed some # of times (0 = forever)

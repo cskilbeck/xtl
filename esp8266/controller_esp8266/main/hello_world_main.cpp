@@ -103,7 +103,7 @@ extern "C" void app_main()
     settings_queue = xQueueCreate(2, sizeof(settings_t));
     settings_t::init();
     powerswitch_init();
-    powerswitch_set(true);
+    powerswitch_set(false);
 
     debug_init();
     initialise_wifi();

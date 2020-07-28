@@ -1,0 +1,180 @@
+C  Project Name : 
+C  Board Name : 
+C  Date : 28/07/2020
+C  Time : 23:02:54
+C  
+C  --------------- Layer Stackup --------------------
+C  
+C  Top Layer
+C  Bottom Layer
+C  
+C  --------------------------------------------------
+C  
+P  JOB
+P  UNITS CUST
+P  TITLE Pro3485.tmp
+P  NUM 1.0
+P  REV A
+P  VER IPC-D-356A
+P  IMAGE PRIMARY
+327BST              Cbst  -1         PA01X 049950Y 043473X0217          S0
+327BST              IC1   -12        PA01X 048721Y 042906X0422Y0138R270 S0
+317BST              VIA   -     D0157PA00X 048642Y 043496X0000          S0
+317BST              VIA   -     D0157PA00X 049559Y 043496X0000          S0
+327DATA             IC2   -2         PA01X 045354Y 040885X0138          S0
+317DATA             DP2   -1    D0472PA00X 045622Y 040029X0000          S0
+327DATA_OUT         IC2   -4         PA01X 046122Y 040629X0138          S0
+317DATA_OUT         DP1   -1    D0472PA00X 046536Y 040029X0000          S0
+327FB               Rb1   -2         PA01X 050935Y 042642X0197          S0
+327FB               Rt1   -1         PA01X 050935Y 042147X0197          S0
+327FB               Cff   -1         PA01X 050935Y 041139X0217          S0
+327FB               IC1   -4         PA01X 048977Y 040666X0422Y0138R090 S0
+327FB               Rt2   -1         PA01X 050935Y 041643X0197          S0
+317FB               VIA   -     D0157PA00X 048835Y 039988X0000          S0
+317FB               VIA   -     D0157PA00X 050751Y 040666X0000          S0
+327GND              C2    -1         PA01X 045345Y 041968X0217          S0
+327GND              C1    -1         PA01X 046605Y 040629X0217          S0
+327GND              Cout2 -2         PA01X 044163Y 039980X0827          S0
+327GND              Cvcc  -2         PA01X 047609Y 041217X0217          S0
+327GND              Cbyp  -1         PA01X 047748Y 039856X0276          S0
+327GND              IC3   -2         PA01X 046231Y 042509X0217          S0
+327GND              IC2   -1         PA01X 045354Y 041141X0138          S0
+327GND              IC2   -3         PA01X 045354Y 040629X0138          S0
+327GND              M2    -S         PA01X 047520Y 044498X0276          S0
+327GND              M2    -S         PA01X 047993Y 044498X0276          S0
+327GND              M2    -S         PA01X 047008Y 044498X0276          S0
+327GND              Cout1 -2         PA01X 042274Y 039980X0827          S0
+327GND              IC1   -15        PA01X 048977Y 041786X0000          S3
+327GND              IC1   -14        PA01X 048209Y 042906X0422Y0138R270 S0
+327GND              Cin2  -1         PA01X 050613Y 047687X0689Y0315R000 S0
+327GND              Cin1  -1         PA01X 049471Y 047687X0689Y0315R000 S0
+317GND                    -1    D0787PA00X 040354Y 047047X0000          S0
+317GND                    -1    D0787PA00X 040354Y 040354X0000          S0
+317GND                    -1    D0787PA00X 052159Y 040354X0000          S0
+317GND                    -1    D0787PA00X 052159Y 042717X0000          S0
+317GND                    -1    D0787PA00X 052159Y 044685X0000          S0
+317GND                    -1    D0787PA00X 040354Y 042717X0000          S0
+317GND                    -1    D0787PA00X 040354Y 044685X0000          S0
+317GND                    -1    D0787PA00X 052159Y 047047X0000          S0
+317GND              VIA   -     D0157PA00X 046234Y 042167X0000          S0
+317GND              VIA   -     D0157PA00X 045640Y 041130X0000          S0
+317GND              VIA   -     D0157PA00X 045640Y 040630X0000          S0
+317GND              VIA   -     D0157PA00X 049085Y 047348X0000          S0
+317GND              VIA   -     D0157PA00X 049085Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 050233Y 047348X0000          S0
+317GND              VIA   -     D0157PA00X 050233Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 048977Y 041786X0000          S3
+317GND              VIA   -     D0157PA00X 048583Y 041392X0000          S3
+317GND              VIA   -     D0157PA00X 048583Y 041786X0000          S3
+317GND              VIA   -     D0157PA00X 048583Y 042179X0000          S3
+317GND              VIA   -     D0157PA00X 048977Y 042179X0000          S3
+317GND              VIA   -     D0157PA00X 049371Y 042179X0000          S3
+317GND              VIA   -     D0157PA00X 049371Y 041786X0000          S3
+317GND              VIA   -     D0157PA00X 049371Y 041392X0000          S3
+317GND              VIA   -     D0157PA00X 048977Y 041392X0000          S3
+317GND              VIA   -     D0157PA00X 049764Y 041786X0000          S0
+317GND              VIA   -     D0157PA00X 049764Y 041392X0000          S0
+317GND              VIA   -     D0157PA00X 047047Y 044094X0000          S0
+317GND              VIA   -     D0157PA00X 047051Y 043791X0000          S0
+317GND              VIA   -     D0157PA00X 049764Y 042179X0000          S0
+317GND              VIA   -     D0157PA00X 048190Y 041392X0000          S0
+317GND              VIA   -     D0157PA00X 048190Y 042179X0000          S0
+317GND              VIA   -     D0157PA00X 047853Y 040290X0000          S0
+317GND              VIA   -     D0157PA00X 047588Y 040286X0000          S0
+317GND              VIA   -     D0157PA00X 048190Y 041786X0000          S0
+317GND              VIA   -     D0157PA00X 042520Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 042224Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 042815Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 043110Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 043114Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 042819Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 042228Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 042524Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 043701Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 043406Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 043996Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 044291Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 044295Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 044000Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 043409Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 043705Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 044587Y 040945X0000          S0
+317GND              VIA   -     D0157PA00X 044591Y 040641X0000          S0
+317GND              VIA   -     D0157PA00X 047343Y 044094X0000          S0
+317GND              VIA   -     D0157PA00X 047638Y 044094X0000          S0
+317GND              VIA   -     D0157PA00X 047933Y 044094X0000          S0
+317GND              VIA   -     D0157PA00X 047937Y 043791X0000          S0
+317GND              VIA   -     D0157PA00X 047642Y 043791X0000          S0
+317GND              VIA   -     D0157PA00X 047346Y 043791X0000          S0
+317GND              VIA   -     D0157PA00X 049850Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 049467Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 050616Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 050999Y 047039X0000          S0
+317GND              VIA   -     D0157PA00X 050999Y 047348X0000          S0
+317GND              VIA   -     D0157PA00X 050616Y 047348X0000          S0
+317GND              VIA   -     D0157PA00X 049467Y 047348X0000          S0
+317GND              VIA   -     D0157PA00X 049850Y 047348X0000          S0
+317GND              VIA   -     D0472PA00X 047442Y 042744X0000          S0
+317GND              VIA   -     D0472PA00X 047442Y 041957X0000          S0
+327HG               M1    -G         PA01X 048977Y 044596X0276          S0
+327HG               IC1   -11        PA01X 048977Y 042906X0422Y0138R270 S0
+327ILIM             IC1   -8         PA01X 049745Y 042906X0422Y0138R270 S0
+327ILIM             Rilim -1         PA01X 050482Y 043473X0197          S0
+327LG               M2    -G         PA01X 048504Y 044498X0276          S0
+327LG               IC1   -13        PA01X 048465Y 042906X0422Y0138R270 S0
+327NetIC1_3         IC1   -3         PA01X 048721Y 040666X0422Y0138R090 S0
+327NetIC3_4         IC3   -4         PA01X 045857Y 041584X0217          S0
+327RON              Ron   -2         PA01X 050217Y 039882X0197          S0
+327RON              IC1   -7         PA01X 049745Y 040666X0422Y0138R090 S0
+327SGND             Rb1   -1         PA01X 050384Y 042642X0197          S0
+327SGND             Css   -1         PA01X 049233Y 039882X0217          S0
+327SGND             IC1   -9         PA01X 049489Y 042906X0422Y0138R270 S0
+327SGND             IC1   -5         PA01X 049233Y 040666X0422Y0138R090 S0
+317SGND             VIA   -     D0157PA00X 049233Y 040257X0000          S0
+317SGND             VIA   -     D0157PA00X 050100Y 040749X0000          S0
+327SS               Css   -2         PA01X 049784Y 039882X0217          S0
+327SS               IC1   -6         PA01X 049489Y 040666X0422Y0138R090 S0
+327SW               L1    -2         PA01X 045748Y 045276X1968          S0
+327SW               M2    -D         PA01X 048504Y 046665X0276          S0
+327SW               M2    -D         PA01X 047993Y 046665X0276          S0
+327SW               M2    -D         PA01X 047520Y 046665X0276          S0
+327SW               M2    -D         PA01X 047756Y 045700X1693          S0
+327SW               M2    -D         PA01X 047008Y 046665X0276          S0
+327SW               M1    -S         PA01X 048977Y 046093X0276          S0
+327SW               M1    -S         PA01X 048977Y 045108X0276          S0
+327SW               M1    -S         PA01X 048977Y 045581X0276          S0
+327SW               Cbst  -2         PA01X 049950Y 044024X0217          S0
+327SW               IC1   -10        PA01X 049233Y 042906X0422Y0138R270 S0
+327SW               Rilim -2         PA01X 050482Y 044024X0197          S0
+317SW               VIA   -     D0157PA00X 049233Y 044166X0000          S0
+317SW               VIA   -     D0157PA00X 049015Y 045344X0000          S0
+327VCC              Cvcc  -1         PA01X 047609Y 040666X0217          S0
+327VCC              IC1   -1         PA01X 048209Y 040666X0422Y0138R090 S0
+327VCC5             C1    -2         PA01X 046605Y 041180X0217          S0
+327VCC5             IC3   -5         PA01X 046605Y 041584X0217          S0
+327VCC5             IC2   -5         PA01X 046122Y 041141X0138          S0
+327VIN              Cbyp  -2         PA01X 048417Y 039856X0276          S0
+327VIN              M1    -D         PA01X 051144Y 046093X0276          S0
+327VIN              M1    -D         PA01X 050179Y 045344X1693          S0
+327VIN              M1    -D         PA01X 051144Y 045581X0276          S0
+327VIN              M1    -D         PA01X 051144Y 045108X0276          S0
+327VIN              M1    -D         PA01X 051144Y 044596X0276          S0
+327VIN              Ron   -1         PA01X 050768Y 039882X0197          S0
+327VIN              IC1   -2         PA01X 048465Y 040666X0422Y0138R090 S0
+327VIN              Cin2  -2         PA01X 050613Y 046565X0689Y0315R000 S0
+327VIN              Cin1  -2         PA01X 049471Y 046565X0689Y0315R000 S0
+317VIN              VIA   -     D0472PA00X 051756Y 045620X0000          S0
+317VIN              VIA   -     D0472PA00X 052544Y 045620X0000          S0
+327VOUT             C2    -2         PA01X 045345Y 042519X0217          S0
+327VOUT             L1    -1         PA01X 042205Y 045276X1968          S0
+327VOUT             Cout2 -1         PA01X 044163Y 042283X0827          S0
+327VOUT             IC3   -3         PA01X 045857Y 042509X0217          S0
+327VOUT             IC3   -1         PA01X 046605Y 042509X0217          S0
+327VOUT             Rt1   -2         PA01X 050384Y 042147X0197          S0
+327VOUT             Cff   -2         PA01X 050384Y 041139X0217          S0
+327VOUT             Cout1 -1         PA01X 042274Y 042283X0827          S0
+327VOUT             Rt2   -2         PA01X 050384Y 041643X0197          S0
+317VOUT             VIA   -     D0157PA00X 047165Y 039798X0000          S0
+317VOUT             VIA   -     D0157PA00X 050493Y 040271X0000          S0
+317VOUT             VIA   -     D0472PA00X 040838Y 041762X0000          S0
+999
