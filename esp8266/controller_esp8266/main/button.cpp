@@ -16,9 +16,9 @@ bool button_released = false;
 void button_init()
 {
     gpio_config_t c;
-    c.pin_bit_mask = GPIO_Pin_10;
+    c.pin_bit_mask = GPIO_Pin_16;
     c.mode = GPIO_MODE_INPUT;
-    c.pull_up_en = GPIO_PULLUP_ENABLE;
+    c.pull_up_en = GPIO_PULLUP_DISABLE;
     c.pull_down_en = GPIO_PULLDOWN_DISABLE;
     c.intr_type = GPIO_INTR_DISABLE;
     gpio_config(&c);
@@ -28,7 +28,7 @@ void button_init()
 
 void button_update()
 {
-    button_down = gpio_get_level(GPIO_NUM_10) == 0;
+    button_down = gpio_get_level(GPIO_NUM_16) == 0;
     bool button_changed = button_down != button_last;
     button_last = button_down;
     button_pressed = button_changed & button_down;

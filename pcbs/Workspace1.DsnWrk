@@ -10,3 +10,7 @@ ProjectPath=..\..\clock\clock.PrjPcb
 ProjectPath=buck4\buck4.PrjPcb
 [Project5]
 ProjectPath=..\..\TimerSwitch\pcb\TimerSwitch\TimerSwitch.PrjPcb
+[Project6]
+ProjectPath=..\..\input_latency\joypad_monitor\joypad_monitor.PrjPcb
+[Project7]
+ProjectPath=..\..\input_latency\light_sensor\light_sensor.PrjPcb
