@@ -34,7 +34,7 @@ OutputMedium3_Type=Publish
 OutputType1=NC Drill
 OutputName1=NC Drill Files
 OutputCategory1=Fabrication
-OutputDocumentPath1=buck4.PcbDoc
+OutputDocumentPath1=
 OutputVariantName1=
 OutputEnabled1=0
 OutputEnabled1_OutputMedium1=0
@@ -46,7 +46,7 @@ Configuration1_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|Ge
 OutputType2=Gerber X2
 OutputName2=Gerber X2 Files
 OutputCategory2=Fabrication
-OutputDocumentPath2=buck4.PcbDoc
+OutputDocumentPath2=
 OutputVariantName2=
 OutputEnabled2=0
 OutputEnabled2_OutputMedium1=0
@@ -58,7 +58,7 @@ Configuration2_Item1=FileComment= |FileSubject=Autodetect|GenerateDRCRulesFile=F
 OutputType3=Pick Place
 OutputName3=Generates pick and place files
 OutputCategory3=Assembly
-OutputDocumentPath3=buck4.PcbDoc
+OutputDocumentPath3=
 OutputVariantName3=
 OutputEnabled3=0
 OutputEnabled3_OutputMedium1=0
@@ -70,7 +70,7 @@ Configuration3_Item1=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|Ge
 OutputType4=Test Points
 OutputName4=Test Point Report
 OutputCategory4=Fabrication
-OutputDocumentPath4=buck4.PcbDoc
+OutputDocumentPath4=
 OutputVariantName4=
 OutputEnabled4=0
 OutputEnabled4_OutputMedium1=0
@@ -82,7 +82,7 @@ Configuration4_Item1=AdjacencyDistance=250000|GenerateCSVFormat=False|GenerateIP
 OutputType5=Schematic Print
 OutputName5=Schematic Prints
 OutputCategory5=Documentation
-OutputDocumentPath5=
+OutputDocumentPath5=[Project Physical Documents]
 OutputVariantName5=
 OutputEnabled5=1
 OutputEnabled5_OutputMedium1=0
@@ -95,7 +95,7 @@ Configuration5_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowPr
 OutputType6=BOM_PartType
 OutputName6=Bill of Materials
 OutputCategory6=Report
-OutputDocumentPath6=buck4.BomDoc
+OutputDocumentPath6=[ActiveBOM Document]
 OutputVariantName6=
 OutputEnabled6=1
 OutputEnabled6_OutputMedium1=0
@@ -120,7 +120,7 @@ Configuration6_Item7=Line #=100|Comment=100|Description=100|Designator=100|Manuf
 OutputType7=ExportSTEP
 OutputName7=Export STEP
 OutputCategory7=Export
-OutputDocumentPath7=buck4.PcbDoc
+OutputDocumentPath7=
 OutputVariantName7=
 OutputEnabled7=0
 OutputEnabled7_OutputMedium1=0
@@ -132,7 +132,7 @@ Configuration7_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModels
 OutputType8=Assembly
 OutputName8=Assembly Drawings
 OutputCategory8=Assembly
-OutputDocumentPath8=buck4.PcbDoc
+OutputDocumentPath8=
 OutputVariantName8=
 OutputEnabled8=1
 OutputEnabled8_OutputMedium1=0
@@ -164,7 +164,7 @@ PcbPrintPreferences8=SubsititueFont_Default=True|SubsititueFont_Serif=True|Subsi
 OutputType9=Design Rules Check
 OutputName9=Design Rules Check
 OutputCategory9=Validation
-OutputDocumentPath9=buck4.PcbDoc
+OutputDocumentPath9=
 OutputVariantName9=
 OutputEnabled9=1
 OutputEnabled9_OutputMedium1=0
