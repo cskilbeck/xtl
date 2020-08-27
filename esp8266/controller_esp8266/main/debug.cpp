@@ -65,5 +65,5 @@ void debug_update()
     int x = static_cast<int>(c);
     gpio_set_level(GPIO_NUM_12, x & 1);
     gpio_set_level(GPIO_NUM_13, x & 2);
-    gpio_set_level(GPIO_NUM_14, x & 4);
+    gpio_set_level(GPIO_NUM_16, x & 4);
 }

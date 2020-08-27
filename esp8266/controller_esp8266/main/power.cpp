@@ -23,7 +23,7 @@ void powerswitch_init()
 void powerswitch_set(bool on_or_off)
 {
     int x = int(on_or_off);
-    gpio_set_level(GPIO_NUM_5, 1 - x);
+    gpio_set_level(GPIO_NUM_5, x);
     gpio_set_level(GPIO_NUM_4, x);
     debug_switch(debug_led_state(on_or_off));
 }

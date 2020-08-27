@@ -745,7 +745,6 @@ void effect::frame_update(byte *frame_buffer)
         global_dimmer = lerp(black, white, settings.brightness * 255 / 100);
         bool powerstate = (settings.flags & (uint32)settings_t::flags_t::powerstate) != 0;
         powerswitch_set(powerstate);
-        debug_set_color(powerstate ? debug_color::green : debug_color::off);
 
         ESP_LOGI(TAG, "Setting powerstate to %d", powerstate);
 
