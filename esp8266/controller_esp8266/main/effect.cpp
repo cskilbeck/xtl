@@ -29,7 +29,8 @@ static int frames = 0;
 color *effect::rgb_buffer = null;
 effect *effect::global_effect = null;
 
-color global_dimmer(255, 220, 235);
+// color global_dimmer(255, 220, 235);
+color global_dimmer(255, 255, 255);
 
 //////////////////////////////////////////////////////////////////////
 
@@ -755,7 +756,59 @@ void effect::frame_update(byte *frame_buffer)
     // and render the frame
     frames += 1;
     if(global_effect != null) {
+
+        // render effect into frame buffer
         global_effect->update();
+
+        // scale the brightness to clamp the power usage
+
+        // get total of the 3 channels
+        int r = 0, g = 0, b = 0;
+        byte *p = frame_buffer;
+        for(int i = 0; i < num_leds; ++i) {
+            r += *p++;
+            g += *p++;
+            b += *p++;
+        }
+
+        // measured power consumption of the 3 led colors in mA * 100 (red = 2.1A)
+        int red_amps = 21;
+        int green_amps = 16;
+        int blue_amps = 18;
+
+        r *= red_amps;
+        g *= green_amps;
+        b *= blue_amps;
+
+        // total power consumption for this frame
+        int sum = r + g + b;
+
+        int scale = 256;
+
+        // exceeded limit? scale it down to max_power (which is 85% of full load = ~4A)
+
+        int string = num_leds * 255;
+        int abs_max_power = (string * red_amps) + (string * green_amps) + (string * blue_amps);
+        int max_power = (abs_max_power * 75) / 100;
+
+        if(sum > max_power) {
+
+            scale = max_power * 256 / sum;
+            if(scale > 256) {
+                scale = 256;
+            }
+        }
+
+        if(frames == 60) {
+            ESP_LOGI(TAG, "Power scale: %d", scale);
+        }
+
+        int num_bytes = num_leds * 3;
+        p = frame_buffer;
+        for(int i = 0; i < num_bytes; ++i) {
+            int b = *p;
+            *p++ = (b * scale) >> 8;
+        }
     }
 }
 
