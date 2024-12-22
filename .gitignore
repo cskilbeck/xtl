@@ -1,4 +1,5 @@
 MDK-ARM/ws2811/
+.vscode
 *.uvoptx
 *.uvguix.*
 *.LOG
