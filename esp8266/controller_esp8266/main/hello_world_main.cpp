@@ -76,12 +76,23 @@ void vblank_task(void *)
     debug_set_color(debug_color::blue);
     button_init();
 
+    int button_frames = 0;
+
     while(1) {
         vTaskSuspend(null);
         neopixel_update();
         button_update();
         if(button_pressed) {
             debug_flash(debug_color::red, debug_color::off, 5, 5);
+        }
+        if(button_down) {
+            button_frames += 1;
+            if(button_frames == 5 * 60) {
+                wifi_reset();
+                __builtin_unreachable();
+            }
+        } else {
+            button_frames = 0;
         }
         debug_update();
         frame_update();
@@ -100,12 +111,13 @@ extern "C" void app_main()
     }
     ESP_ERROR_CHECK(ret);
 
-    settings_queue = xQueueCreate(2, sizeof(settings_t));
-    settings_t::init();
     powerswitch_init();
     powerswitch_set(false);
 
+    settings_queue = xQueueCreate(2, sizeof(settings_t));
+    settings_t::init();
+
     debug_init();
-    initialise_wifi();
+    wifi_init();
     xTaskCreate(vblank_task, "vblank_task", 2048, null, 15, &vblank_task_handle);
 }

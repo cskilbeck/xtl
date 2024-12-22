@@ -1,3 +1,4 @@
 #pragma once
 
-void initialise_wifi();
+void wifi_init();
+__attribute((noreturn)) void wifi_reset();

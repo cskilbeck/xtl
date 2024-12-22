@@ -19,8 +19,8 @@ namespace
 
 void debug_init()
 {
-    gpio_config_t c;
-    c.pin_bit_mask = GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14;
+    gpio_config_t c{};
+    c.pin_bit_mask = GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_16;
     c.mode = GPIO_MODE_OUTPUT;
     c.pull_up_en = GPIO_PULLUP_DISABLE;
     c.pull_down_en = GPIO_PULLDOWN_DISABLE;
