@@ -21,7 +21,7 @@ TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Samsung CLP-320 Series (USB001)
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -115,7 +115,7 @@ OutputEnabled5_OutputMedium3=4
 OutputEnabled5_OutputMedium4=0
 OutputDefault5=0
 Configuration5_Name1=OutputConfigurationParameter1
-Configuration5_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=False|IncludeElectricalPadHoles=False|IncludeFreePadHoles=False|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=1|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|IncludeCoverLayer=True|SkipFreeBodies=False|SkipHidden=False
+Configuration5_Item1=Record=ExportSTEPView|ExportComponentOptions=0|ExportModelsOption=2|ExportHolesOption=0|CanSelectPrimitives=False|IncludeMechanicalPadHoles=True|IncludeElectricalPadHoles=True|IncludeFreePadHoles=True|ExportFoldedBoard=True|ExportFoldedBoardRate=100|ComponentSuffixType=0|ComponentSuffix= |ExportCopperOption=0|ExportCopperLayer=0|ExportPadAndViaBarrelsOnly=False|IgnoreBoardCopperLayerColors=False|ExportAsSinglePart=False|IncludeCoverLayer=True|SkipFreeBodies=False|SkipHidden=False
 OutputType6=Schematic Print
 OutputName6=Schematic Prints
 OutputCategory6=Documentation
@@ -186,7 +186,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=0
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Dev\wifi-christmas-tree-lights\pcbs\controller_8266\.\Outputs\
+OutputFilePath3=U:\dev\wifi-christmas-tree-lights\pcbs\controller_8266\.\Outputs\
 ReleaseManaged3=0
 OutputBasePath3=.\
 OutputPathMedia3=Outputs
@@ -240,7 +240,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=C:\Dev\wifi-christmas-tree-lights\pcbs\controller_8266\Outputs\controller_8266_report.PDF
 OpenOutputs2=1
-RelativeOutputPath3=C:\Dev\wifi-christmas-tree-lights\pcbs\controller_8266\.\Outputs\
+RelativeOutputPath3=U:\dev\wifi-christmas-tree-lights\pcbs\controller_8266\.\Outputs\
 OpenOutputs3=0
 AddToProject3=0
 TimestampFolder3=0

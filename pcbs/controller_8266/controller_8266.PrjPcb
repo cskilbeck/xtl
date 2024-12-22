@@ -157,21 +157,38 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document8]
-DocumentPath=aisler.OutJob
+DocumentPath=controller_8266_psu.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoEnabled=0
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WVKPSROD
+
+[Document9]
+DocumentPath=controller_8266_switch.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=1
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=2
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=0
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UNDPYMAF
 
 [GeneratedDocument1]
 DocumentPath=Outputs\2020-05-22\controller_8266.html
@@ -229,7 +246,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=PCADNetlist
 OutputName1=PCAD Netlist
@@ -335,7 +352,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -435,7 +452,7 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -457,7 +474,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -529,7 +546,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -566,7 +583,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -746,7 +763,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Component states check
 OutputName1=Vault's components states check
@@ -790,7 +807,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -851,7 +868,7 @@ OutputDefault11=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=Kyocera ECOSYS P5026cdn
+TargetPrinter=Brother HL-L8260CDW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1093,7 +1110,7 @@ Type39=2
 Type40=2
 Type41=0
 Type42=2
-Type43=2
+Type43=1
 Type44=0
 Type45=0
 Type46=0
@@ -1239,106 +1256,16 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=controller_8266.SchLib
-ComponentDesignItemID0=4-1437565-1
-ComponentSymbolReference0=4-1437565-1
+ComponentDesignItemID0=M74VHC1GT125
+ComponentSymbolReference0=M74VHC1GT125
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name And Type
-ComponentLibraryIdentifier1=controller_8266.SchLib
-ComponentDesignItemID1=BD9G102G-LB
-ComponentSymbolReference1=BD9G102G-LB
-ComponentUpdate1=1
-ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name And Type
-ComponentLibraryIdentifier2=controller_8266.SchLib
-ComponentDesignItemID2=Cap
-ComponentSymbolReference2=Cap
-ComponentUpdate2=1
-ComponentIsDeviceSheet2=0
-ComponentLibIdentifierKind3=Library Name And Type
-ComponentLibraryIdentifier3=controller_8266.SchLib
-ComponentDesignItemID3=CDSOT23-T24CAN
-ComponentSymbolReference3=CDSOT23-T24CAN
-ComponentUpdate3=1
-ComponentIsDeviceSheet3=0
-ComponentLibIdentifierKind4=Library Name And Type
-ComponentLibraryIdentifier4=controller_8266.SchLib
-ComponentDesignItemID4=CON_PWR
-ComponentSymbolReference4=CON_PWR
-ComponentUpdate4=1
-ComponentIsDeviceSheet4=0
-ComponentLibIdentifierKind5=Library Name And Type
-ComponentLibraryIdentifier5=controller_8266.SchLib
-ComponentDesignItemID5=CON4
-ComponentSymbolReference5=CON4
-ComponentUpdate5=1
-ComponentIsDeviceSheet5=0
-ComponentLibIdentifierKind6=Library Name And Type
-ComponentLibraryIdentifier6=controller_8266.SchLib
-ComponentDesignItemID6=CON6
-ComponentSymbolReference6=CON6
-ComponentUpdate6=1
-ComponentIsDeviceSheet6=0
-ComponentLibIdentifierKind7=Library Name And Type
-ComponentLibraryIdentifier7=controller_8266.SchLib
-ComponentDesignItemID7=D Schottky
-ComponentSymbolReference7=D Schottky
-ComponentUpdate7=1
-ComponentIsDeviceSheet7=0
-ComponentLibIdentifierKind8=Library Name And Type
-ComponentLibraryIdentifier8=controller_8266.SchLib
-ComponentDesignItemID8=ESP8266 ESP-12-E
-ComponentSymbolReference8=ESP8266 ESP-12-E
-ComponentUpdate8=1
-ComponentIsDeviceSheet8=0
-ComponentLibIdentifierKind9=Library Name And Type
-ComponentLibraryIdentifier9=controller_8266.SchLib
-ComponentDesignItemID9=Inductor
-ComponentSymbolReference9=Inductor
-ComponentUpdate9=1
-ComponentIsDeviceSheet9=0
-ComponentLibIdentifierKind10=Library Name And Type
-ComponentLibraryIdentifier10=controller_8266.SchLib
-ComponentDesignItemID10=M74VHC1GT125
-ComponentSymbolReference10=M74VHC1GT125
-ComponentUpdate10=1
-ComponentIsDeviceSheet10=0
-ComponentLibIdentifierKind11=Library Name And Type
-ComponentLibraryIdentifier11=controller_8266.SchLib
-ComponentDesignItemID11=MOSFET-N
-ComponentSymbolReference11=MOSFET-N
-ComponentUpdate11=1
-ComponentIsDeviceSheet11=0
-ComponentLibIdentifierKind12=Library Name And Type
-ComponentLibraryIdentifier12=controller_8266.SchLib
-ComponentDesignItemID12=MOSFET-P
-ComponentSymbolReference12=MOSFET-P
-ComponentUpdate12=1
-ComponentIsDeviceSheet12=0
-ComponentLibIdentifierKind13=Library Name And Type
-ComponentLibraryIdentifier13=controller_8266.SchLib
-ComponentDesignItemID13=Res2
-ComponentSymbolReference13=Res2
-ComponentUpdate13=1
-ComponentIsDeviceSheet13=0
-ComponentLibIdentifierKind14=Library Name And Type
-ComponentLibraryIdentifier14=controller_8266.SchLib
-ComponentDesignItemID14=RGB_LED
-ComponentSymbolReference14=RGB_LED
-ComponentUpdate14=1
-ComponentIsDeviceSheet14=0
-ComponentLibIdentifierKind15=Library Name And Type
-ComponentLibraryIdentifier15=controller_8266.SchLib
-ComponentDesignItemID15=RT9069-50GT
-ComponentSymbolReference15=RT9069-50GT
-ComponentUpdate15=1
-ComponentIsDeviceSheet15=0
 FullReplace=0
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1352,118 +1279,19 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Allied_Number
+ParameterName0=Comment
 ParameterUpdate0=1
-ParameterName1=Code_IEC
+ParameterName1=Component Kind
 ParameterUpdate1=1
-ParameterName2=Code_JEDEC
+ParameterName2=Description
 ParameterUpdate2=1
-ParameterName3=Code_JEITA
+ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Comment
-ParameterUpdate4=1
-ParameterName5=Component Kind
-ParameterUpdate5=1
-ParameterName6=Datasheet Link
-ParameterUpdate6=1
-ParameterName7=Description
-ParameterUpdate7=1
-ParameterName8=LatestRevisionDate
-ParameterUpdate8=1
-ParameterName9=LatestRevisionNote
-ParameterUpdate9=1
-ParameterName10=Library Reference
-ParameterUpdate10=1
-ParameterName11=Manufacturer_Name
-ParameterUpdate11=1
-ParameterName12=Manufacturer_Part_Number
-ParameterUpdate12=1
-ParameterName13=PackageDescription
-ParameterUpdate13=1
-ParameterName14=PackageReference
-ParameterUpdate14=1
-ParameterName15=Published
-ParameterUpdate15=1
-ParameterName16=Publisher
-ParameterUpdate16=1
-ParameterName17=RS Part Number
-ParameterUpdate17=1
-ParameterName18=Value
-ParameterUpdate18=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=CAPC_0603_1608X08L
+ModelName0=SC70-5
 ModelUpdate0=1
-ModelType1=PCBLIB
-ModelName1=CAPC_1206_3216X16L
-ModelUpdate1=1
-ModelType2=PCBLIB
-ModelName2=CAPC3224X25L
-ModelUpdate2=1
-ModelType3=PCBLIB
-ModelName3=CON2X3
-ModelUpdate3=1
-ModelType4=PCBLIB
-ModelName4=CONNECTOR
-ModelUpdate4=1
-ModelType5=PCBLIB
-ModelName5=CONPWR
-ModelUpdate5=1
-ModelType6=PCBLIB
-ModelName6=DFN65P100X30-2L
-ModelUpdate6=1
-ModelType7=PCBLIB
-ModelName7=DPAK127P600X120-5L
-ModelUpdate7=1
-ModelType8=PCBLIB
-ModelName8=DPAK229P994X241-3L
-ModelUpdate8=1
-ModelType9=PCBLIB
-ModelName9=ESP8266 ESP-12-E
-ModelUpdate9=1
-ModelType10=PCBLIB
-ModelName10=EVQP7C01P
-ModelUpdate10=1
-ModelType11=PCBLIB
-ModelName11=FSM-SWITCH
-ModelUpdate11=1
-ModelType12=PCBLIB
-ModelName12=INDP5150X20L
-ModelUpdate12=1
-ModelType13=PCBLIB
-ModelName13=INDP6360X48L
-ModelUpdate13=1
-ModelType14=PCBLIB
-ModelName14=PLCC-4
-ModelUpdate14=1
-ModelType15=PCBLIB
-ModelName15=RESC_0603_1608X08L
-ModelUpdate15=1
-ModelType16=PCBLIB
-ModelName16=RESC6432X12L
-ModelUpdate16=1
-ModelType17=PCBLIB
-ModelName17=SC70-5
-ModelUpdate17=1
-ModelType18=PCBLIB
-ModelName18=SODFL470X110-2L
-ModelUpdate18=1
-ModelType19=PCBLIB
-ModelName19=SOT23
-ModelUpdate19=1
-ModelType20=PCBLIB
-ModelName20=SOT65P210X100-5L
-ModelUpdate20=1
-ModelType21=PCBLIB
-ModelName21=SOT95P260X90-5L
-ModelUpdate21=1
-ModelType22=PCBLIB
-ModelName22=TO-220
-ModelUpdate22=1
-ModelType23=PCBLIB
-ModelName23=TSOP95P280X125-6L
-ModelUpdate23=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
@@ -1474,14 +1302,13 @@ PartTypes=0
 [NetInfos]
 Net1=NetName=AGND|NetColor=$00E9BD9F
 Net2=NetName=GND|NetColor=$006EFF6E
-Net3=NetName=VCC_LED|NetColor=$000068C8
-Net4=NetName=VCC24|NetColor=$00FFFF6E
-Net5=NetName=VCC3V3|NetColor=clYellow
-Net6=NetName=VCC5|NetColor=$00EFC3FF
-Net7=NetName=VCC5V9|NetColor=$00FF6E6E
+Net3=NetName=VCC24|NetColor=$00FFFF6E
+Net4=NetName=VCC3V3|NetColor=clYellow
+Net5=NetName=VCC5|NetColor=$00EFC3FF
+Net6=NetName=VCC5V9|NetColor=$00FF6E6E
 
 [Comparison Options]
-ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=0|UseName=-1|InclAllRules=0
+ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions1=Kind=Net Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions2=Kind=Component Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
 ComparisonOptions3=Kind=Rule|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
