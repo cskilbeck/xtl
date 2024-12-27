@@ -1,0 +1,33 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: controller_8266.GBR   29/12/2024  15:12:35
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.gbr                Top Layer                               
+.gbr                Layer 1                                 
+.gbr                Layer 2                                 
+.gbr                Bottom Layer                            
+.gbr                Bottom Pad Master                       
+.gbr                Top Pad Master                          
+.gbr                Bottom Overlay                          
+.gbr                Bottom Solder                           
+.gbr                Bottom Paste                            
+.gbr                Top Overlay                             
+.gbr                Top Paste                               
+.gbr                Top Solder                              
+.gbr                Keep-Out Layer                          
+.gbr                Mechanical 13                           
+.gbr                Bottom Courtyard                        
+.gbr                Top 3D Body                             
+.gbr                Bottom Component Outline                
+.gbr                Top Courtyard                           
+.gbr                Top Component Outline                   
+.gbr                Bottom Assembly                         
+.gbr                Bottom 3D Body                          
+.gbr                Top Assembly                            
+.gbr                Mechanical 15                           
+.gbr                Profile                                 
+------------------------------------------------------------------------------------------

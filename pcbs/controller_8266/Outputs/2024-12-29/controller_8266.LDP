@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: E:\dev\wifi-christmas-tree-lights\pcbs\controller_8266\controller_8266.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=controller_8266-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=controller_8266-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
