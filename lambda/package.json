@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "ask-sdk": "^2.0.7",
-    "npm": "^6.4.1",
+    "npm": "^11.9.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
   }
